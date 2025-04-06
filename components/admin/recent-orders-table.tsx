@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { PrismaClient } from "@prisma/client"
 import { Button } from "@/components/ui/button"
 import {
   Table,
@@ -20,8 +19,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Badge } from "@/components/ui/badge"
 import { MoreHorizontal, ExternalLink } from "lucide-react"
-
-const prisma = new PrismaClient()
 
 // Generate mock order data (this would be replaced with real data from your database)
 const MOCK_ORDERS = [
@@ -80,7 +77,7 @@ const getStatusColor = (status: string) => {
 }
 
 export default function RecentOrdersTable() {
-  const [orders, setOrders] = useState(MOCK_ORDERS)
+  const [orders] = useState(MOCK_ORDERS)
   
   const formatDate = (date: Date) => {
     return new Intl.DateTimeFormat("en-US", {

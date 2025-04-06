@@ -11,7 +11,6 @@ import {
   ResponsiveContainer,
 } from "recharts"
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 // Sample data - would be replaced with real data from your database
 const generateData = () => {

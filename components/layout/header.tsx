@@ -6,11 +6,9 @@ import { useRouter } from "next/navigation"
 import { signOut, useSession } from "next-auth/react"
 import { 
   Search, 
-  ShoppingCart, 
   User, 
   Heart, 
   Menu,
-  X
 } from "lucide-react"
 import { 
   DropdownMenu, 
@@ -32,7 +30,6 @@ export default function Header() {
   const router = useRouter()
   const { data: session } = useSession()
   const [searchQuery, setSearchQuery] = useState("")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()

@@ -12,7 +12,6 @@ import {
   SheetTitle, 
   SheetTrigger 
 } from "@/components/ui/sheet"
-import { Separator } from "@/components/ui/separator"
 import { useCartStore } from "@/store/cart-store"
 import { formatCurrency } from "@/lib/utils"
 import Image from "next/image"
