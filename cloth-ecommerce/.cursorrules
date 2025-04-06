@@ -1,0 +1,108 @@
+# Cursor Rules
+
+## Instructions
+
+- Record fixes for mistakes or corrections to avoid repetition in the `Lessons` section.
+- Organize thoughts and plan steps before starting a task in the `Scratchpad` section.
+- Clear old tasks if necessary.
+- Use todo markers for progress tracking:
+  - `[X]` Completed tasks
+  - `[ ]` Pending tasks
+- Update Scratchpad after completing subtasks.
+- Reflect and plan after milestones for better task management.
+- Always refer to Scratchpad before planning the next step.
+
+## Lessons
+
+## Scratchpad
+
+### 1. Project Setup and Configuration
+- [X] Initialize Next.js 15 project with TypeScript
+- [X] Set up project structure (pages, components, lib, etc.)
+- [X] Configure environment variables
+- [X] Install and set up dependencies (shadcn, lucide, etc.)
+- [ ] Set up PostgreSQL database
+- [ ] Configure Prisma schema:
+  - User model
+  - Product model
+  - Category model
+  - Order model
+  - Review model
+  - Cart model
+- [ ] Implement NextAuth.js authentication:
+  - Email/Password
+  - OAuth providers (Google, GitHub)
+  - JWT handling
+  - Protected routes
+
+### 2. Database Schema Design
+- [ ] Design User model (admin, customers)
+- [ ] Design Product model (categories, attributes, images)
+- [ ] Design Order model
+- [ ] Design Cart model
+- [ ] Design Review model
+- [ ] Set up relationships between models
+- [ ] Create initial migrations
+
+### 3. Authentication System
+- [ ] Implement sign up functionality
+- [ ] Implement login functionality
+- [ ] Set up role-based access control
+- [ ] Create protected routes
+- [ ] Implement password reset flow
+- [ ] Set up OAuth providers (Google, GitHub)
+
+### 4. Admin Dashboard
+- [ ] Create admin layout
+- [ ] Build dashboard overview with Recharts
+- [ ] Implement product management (CRUD)
+- [ ] Create category management
+- [ ] Implement order management
+- [ ] Create user management
+- [ ] Build analytics and reporting
+- [ ] Set up file uploads with Uploadthing
+
+### 5. Store Front
+- [ ] Create responsive layout
+- [ ] Build homepage with featured products
+- [ ] Implement product listing pages
+- [ ] Create product detail pages
+- [ ] Build search functionality with filters
+- [ ] Implement wishlist feature
+- [ ] Create cart functionality with Zustand
+
+### 6. Shopping Experience
+- [ ] Build cart page
+- [ ] Implement checkout process
+- [ ] Set up Stripe payment integration
+- [ ] Create order confirmation
+- [ ] Build order tracking
+- [ ] Implement review system
+- [ ] Create user profile management
+
+### 7. Email Notifications
+- [ ] Set up Resend for email delivery
+- [ ] Create order confirmation emails
+- [ ] Implement password reset emails
+- [ ] Set up marketing email templates
+- [ ] Create shipping notification emails
+
+### 8. Performance Optimization
+- [ ] Implement server-side rendering where needed
+- [ ] Set up client-side caching
+- [ ] Optimize image loading and processing
+- [ ] Implement API route optimization
+- [ ] Add pagination for large data sets
+
+### 9. Testing and Deployment
+- [ ] Write unit tests for critical functions
+- [ ] Perform integration testing
+- [ ] Set up CI/CD pipeline
+- [ ] Deploy to production
+- [ ] Configure monitoring and error logging
+
+### 10. Post-Launch Tasks
+- [ ] Implement SEO optimizations
+- [ ] Set up analytics
+- [ ] Create documentation
+- [ ] Plan for future features and improvements
