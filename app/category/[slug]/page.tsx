@@ -5,10 +5,10 @@ import Link from "next/link"
 import { Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-interface CategoryPageProps {
-  params: {
-    slug: string
-  }
+// Define page props according to Next.js App Router expectations
+type Props = {
+  params: { slug: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 const prisma = new PrismaClient()
@@ -102,10 +102,8 @@ async function getProductsByCategory(categoryId: string) {
   })
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
-  // Await the params object
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug;
+export default async function CategoryPage({ params }: Props) {
+  const slug = params.slug;
   
   console.log(`Processing category page for slug: ${slug}`);
   
