@@ -2,6 +2,10 @@
 
 A modern, full-featured e-commerce platform built with Next.js 15, TypeScript, PostgreSQL, Prisma, and more.
 
+## Live Demo
+
+Visit the live demo of NBDAStore: [https://cloth-ecommerce-mu.vercel.app/](https://cloth-ecommerce-mu.vercel.app/)
+
 ## Features
 
 - **User Authentication**: Email/password login and OAuth providers (Google, GitHub)
@@ -99,15 +103,39 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
+## Deployment
+
+The application is deployed on Vercel. You can deploy your own version by:
+
+1. Fork this repository
+2. Sign up for a [Vercel account](https://vercel.com/signup)
+3. Import your GitHub repository into Vercel
+4. Configure environment variables in the Vercel dashboard
+5. Deploy your application
+
+The site will be deployed to a URL like `https://your-project-name.vercel.app`
+
 ## Accessing Different Parts of the Application
 
 ### Customer Interface
-- **Homepage**: http://localhost:3000/
-- **Product Categories**: http://localhost:3000/category/[category-id]
-- **Product Details**: http://localhost:3000/product/[product-id]
-- **Cart**: http://localhost:3000/cart
-- **Checkout**: http://localhost:3000/checkout
-- **User Account**: http://localhost:3000/account
+- **Homepage**: 
+  - Local: http://localhost:3000/
+  - Live: https://cloth-ecommerce-mu.vercel.app/
+- **Product Categories**: 
+  - Local: http://localhost:3000/category/[category-id]
+  - Live: https://cloth-ecommerce-mu.vercel.app/category/[category-id]
+- **Product Details**: 
+  - Local: http://localhost:3000/product/[product-id]
+  - Live: https://cloth-ecommerce-mu.vercel.app/product/[product-id]
+- **Cart**: 
+  - Local: http://localhost:3000/cart
+  - Live: https://cloth-ecommerce-mu.vercel.app/cart
+- **Checkout**: 
+  - Local: http://localhost:3000/checkout
+  - Live: https://cloth-ecommerce-mu.vercel.app/checkout
+- **User Account**: 
+  - Local: http://localhost:3000/account
+  - Live: https://cloth-ecommerce-mu.vercel.app/account
 
 ### Admin Dashboard
 1. Register a new user through the application
@@ -116,7 +144,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
    UPDATE "User" SET role = 'ADMIN' WHERE email = 'your-email@example.com';
    ```
 3. Log in with your admin account
-4. Access the admin dashboard at: http://localhost:3000/admin
+4. Access the admin dashboard at: 
+   - Local development: http://localhost:3000/admin
+   - Live site: https://cloth-ecommerce-mu.vercel.app/admin
 
 ## Project Structure
 
