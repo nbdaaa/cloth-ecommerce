@@ -1,6 +1,9 @@
 import { notFound } from "next/navigation"
 import { PrismaClient } from "@prisma/client"
 import FeaturedProducts from "@/components/home/featured-products"
+import Link from "next/link"
+import { Home } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 interface CategoryPageProps {
   params: {

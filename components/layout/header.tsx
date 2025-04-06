@@ -52,14 +52,20 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0 mr-4">
-            <Link href="/" className="text-2xl font-bold">
-              FashionStore
+          <div className="flex-shrink-0 mr-4 ml-4">
+            <Link href="/" className="text-3xl font-bold">
+              NBDAStore
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6 ml-6">
+            <Link
+              href="/"
+              className="text-gray-600 hover:text-black transition-colors font-medium"
+            >
+              Home
+            </Link>
             {categories.map((category) => (
               <Link
                 key={category.slug}
@@ -171,6 +177,12 @@ export default function Header() {
                   
                   <nav className="flex flex-col space-y-4 py-4">
                     <h3 className="font-semibold text-lg mb-2">Categories</h3>
+                    <Link
+                      href="/"
+                      className="py-2 px-4 hover:bg-gray-100 rounded-md font-medium"
+                    >
+                      Home
+                    </Link>
                     {categories.map((category) => (
                       <Link
                         key={category.slug}

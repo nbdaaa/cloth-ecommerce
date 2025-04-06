@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import HomeButton from "@/components/layout/home-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FashionStore | Online Clothing Store",
+  title: "NBDAStore | Online Clothing Store",
   description: "Shop the latest fashion trends in clothing, shoes, and accessories.",
 };
 
@@ -28,7 +31,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+            <HomeButton />
+          </div>
+        </Providers>
       </body>
     </html>
   );

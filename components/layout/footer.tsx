@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand and social */}
           <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">FashionStore</h3>
+            <h3 className="text-2xl font-bold mb-4">NBDAStore</h3>
             <p className="text-gray-600 mb-4">
               Your one-stop shop for fashionable and high-quality clothing
             </p>
@@ -139,7 +139,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t mt-12 pt-8 text-center text-gray-600">
-          <p>&copy; {currentYear} FashionStore. All rights reserved.</p>
+          <p>&copy; {currentYear} NBDAStore. All rights reserved.</p>
         </div>
       </div>
     </footer>
