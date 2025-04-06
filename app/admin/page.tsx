@@ -1,4 +1,3 @@
-import { PrismaClient } from "@prisma/client"
 import {
   DollarSign,
   Users,
@@ -12,8 +11,7 @@ import RecentOrdersTable from "@/components/admin/recent-orders-table"
 import StatsCard from "@/components/admin/stats-card"
 import LowStockAlert from "@/components/admin/low-stock-alert"
 import TopProducts from "@/components/admin/top-products"
-
-const prisma = new PrismaClient()
+import { prisma } from "@/lib/prisma"
 
 async function getOverviewStats() {
   const totalCustomersCount = await prisma.user.count({

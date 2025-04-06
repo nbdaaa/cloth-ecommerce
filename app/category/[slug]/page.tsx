@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
-import { PrismaClient } from "@prisma/client"
 import FeaturedProducts from "@/components/home/featured-products"
+import { prisma } from "@/lib/prisma"
 import Link from "next/link"
 import { Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -10,8 +10,6 @@ type Props = {
   params: { slug: string }
   searchParams: { [key: string]: string | string[] | undefined }
 }
-
-const prisma = new PrismaClient()
 
 async function getCategoryBySlug(slug: string) {
   console.log(`Looking for category with slug: ${slug}`);

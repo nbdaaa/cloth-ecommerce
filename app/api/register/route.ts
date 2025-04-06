@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server"
 import { hash } from "bcryptjs"
-import { PrismaClient } from "@prisma/client"
 import { z } from "zod"
-
-const prisma = new PrismaClient()
+import { prisma } from "@/lib/prisma"
 
 // Define schema for input validation
 const userSchema = z.object({
@@ -66,7 +64,5 @@ export async function POST(req: Request) {
       { message: "Error creating user" },
       { status: 500 }
     )
-  } finally {
-    await prisma.$disconnect()
   }
 } 
