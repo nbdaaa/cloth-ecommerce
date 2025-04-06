@@ -16,6 +16,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     signIn: "/login",
     error: "/login",
   },
+  secret: process.env.AUTH_SECRET || "your-fallback-secret-should-be-changed-in-production",
   providers: [
     GitHub({
       clientId: process.env.GITHUB_CLIENT_ID,

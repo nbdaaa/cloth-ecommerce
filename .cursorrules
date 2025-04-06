@@ -54,14 +54,16 @@
   - [X] Protected routes
 
 #### Phase 3: Core Features Development
-- [ ] Build reusable UI components with Shadcn
-- [ ] Implement authentication system (register, login, password reset)
-- [ ] Create product models and database schema
-- [ ] Develop product listing and filtering functionality
-- [ ] Build product detail pages
-- [ ] Implement shopping cart with Zustand
-- [ ] Create checkout process integrated with Stripe
-- [ ] Set up order processing and confirmation
+- [X] Home Layout:
+  - [X] Create `(home)` folder in `app` directory
+  - [X] Header with logo, search bar, and navigation
+  - [X] Footer with links and social media
+- [X] Homepage:
+  - [X] Banner carousel
+  - [X] Latest products
+- [X] Create basic category pages
+- [ ] Product detail pages
+- [ ] Shopping cart implementation
 - [ ] Add user profile management
 - [ ] Implement wishlist functionality
 
