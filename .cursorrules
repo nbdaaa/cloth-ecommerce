@@ -1,0 +1,91 @@
+# Cursor Rules
+
+## Instructions
+
+- Record fixes for mistakes or corrections to avoid repetition in the `Lessons` section.
+- Organize thoughts and plan steps before starting a task in the `Scratchpad` section.
+- Clear old tasks if necessary.
+- Use todo markers for progress tracking:
+  - `[X]` Completed tasks
+  - `[ ]` Pending tasks
+- Update Scratchpad after completing subtasks.
+- Reflect and plan after milestones for better task management.
+- Always refer to Scratchpad before planning the next step.
+
+## Lessons
+
+## Scratchpad
+
+### E-Commerce Website Development Plan
+
+#### Phase 1: Project Setup and Configuration
+- [X] Initialize Next.js 15 project with TypeScript
+- [X] Set up project structure and folder organization
+- [X] Configure ESLint and Prettier
+- [X] Install and configure required dependencies:
+  - [X] Shadcn/ui components
+  - [X] Lucide icons
+  - [X] Zod for schema validation
+  - [X] Zustand for state management
+  - [X] Recharts for data visualization
+  - [X] Resend for email functionality
+  - [X] Uploadthing for file uploads
+  - [X] Prisma ORM
+  - [X] PostgreSQL database
+  - [X] NextAuth.js beta for authentication
+  - [X] Stripe for payments
+- [X] Set up Prisma with PostgreSQL
+- [ ] Create database schema with Prisma
+- [ ] Configure authentication with next-auth
+
+
+#### Phase 2: Core Features Development
+- [ ] Build reusable UI components with Shadcn
+- [ ] Implement authentication system (register, login, password reset)
+- [ ] Create product models and database schema
+- [ ] Develop product listing and filtering functionality
+- [ ] Build product detail pages
+- [ ] Implement shopping cart with Zustand
+- [ ] Create checkout process integrated with Stripe
+- [ ] Set up order processing and confirmation
+- [ ] Add user profile management
+- [ ] Implement wishlist functionality
+
+#### Phase 3: Admin Dashboard
+- [ ] Create admin layout and protected routes
+- [ ] Build dashboard overview with statistics and Recharts
+- [ ] Develop product management (CRUD operations)
+  - [ ] Product listing/search
+  - [ ] Add/edit product forms with validation
+  - [ ] Upload product images with Uploadthing
+  - [ ] Inventory management
+- [ ] Implement order management
+  - [ ] Order listing with filtering
+  - [ ] Order details and status updates
+  - [ ] Order fulfillment workflow
+- [ ] Create user management system
+- [ ] Build sales analytics and reporting
+- [ ] Add settings and configuration section
+
+#### Phase 4: Advanced Features
+- [ ] Implement search functionality
+- [ ] Add product reviews and ratings
+- [ ] Create recommendation engine
+- [ ] Set up email notifications with Resend
+  - [ ] Order confirmations
+  - [ ] Shipping updates
+  - [ ] Password resets
+  - [ ] Marketing emails
+- [ ] Build promotion and discount system
+- [ ] Implement inventory tracking
+- [ ] Add multi-currency support
+- [ ] Create SEO optimization features
+
+#### Phase 5: Testing and Deployment
+- [ ] Write unit and integration tests
+- [ ] Perform security testing and audits
+- [ ] Optimize performance and loading times
+- [ ] Set up CI/CD pipeline
+- [ ] Deploy application to production
+- [ ] Configure monitoring and error tracking
+- [ ] Create documentation for maintenance and updates
