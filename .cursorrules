@@ -47,11 +47,11 @@
   - [X] Review model
   - [X] Cart model
 - [X] Seed sample data (categories, products, users)
-- [ ] Implement NextAuth.js authentication:
-  - [ ] Email/Password
-  - [ ] OAuth providers (Google, GitHub)
-  - [ ] JWT handling
-  - [ ] Protected routes
+- [X] Implement NextAuth.js authentication:
+  - [X] Email/Password
+  - [X] OAuth providers (Google, GitHub)
+  - [X] JWT handling
+  - [X] Protected routes
 
 #### Phase 3: Core Features Development
 - [ ] Build reusable UI components with Shadcn
