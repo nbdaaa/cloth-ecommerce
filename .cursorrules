@@ -62,10 +62,11 @@
   - [X] Banner carousel
   - [X] Latest products
 - [X] Create basic category pages
-- [ ] Product detail pages
-- [ ] Shopping cart implementation
-- [ ] Add user profile management
-- [ ] Implement wishlist functionality
+- [X] Product detail pages
+- [X] Shopping cart implementation
+- [X] Add user profile management
+- [X] Implement wishlist functionality
+- [X] Implement checkout
 
 #### Phase 4: Admin Dashboard
 - [ ] Create admin layout and protected routes

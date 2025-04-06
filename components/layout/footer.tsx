@@ -53,17 +53,17 @@ export default function Footer() {
             <h3 className="font-bold mb-4">Shop</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/category/t-shirts" className="text-gray-600 hover:text-black">
+                <Link href="/category/tshirts-category" className="text-gray-600 hover:text-black">
                   T-shirts
                 </Link>
               </li>
               <li>
-                <Link href="/category/jeans" className="text-gray-600 hover:text-black">
+                <Link href="/category/jeans-category" className="text-gray-600 hover:text-black">
                   Jeans
                 </Link>
               </li>
               <li>
-                <Link href="/category/shoes" className="text-gray-600 hover:text-black">
+                <Link href="/category/shoes-category" className="text-gray-600 hover:text-black">
                   Shoes
                 </Link>
               </li>

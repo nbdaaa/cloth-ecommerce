@@ -48,7 +48,8 @@ interface CategoryCardProps {
 }
 
 function CategoryCard({ category, imageUrl }: CategoryCardProps) {
-  const categoryUrl = `/category/${category.name.toLowerCase().replace(/\s+/g, '-')}`
+  // Use the category ID directly for the URL
+  const categoryUrl = `/category/${category.id}`
 
   return (
     <Link href={categoryUrl}>

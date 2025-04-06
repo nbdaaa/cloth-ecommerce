@@ -26,6 +26,7 @@ import {
   SheetContent, 
   SheetTrigger 
 } from "@/components/ui/sheet"
+import CartButton from "./cart-button"
 
 export default function Header() {
   const router = useRouter()
@@ -41,9 +42,9 @@ export default function Header() {
   }
 
   const categories = [
-    { name: "T-shirts", slug: "t-shirts" },
-    { name: "Jeans", slug: "jeans" },
-    { name: "Shoes", slug: "shoes" },
+    { name: "T-shirts", slug: "tshirts-category" },
+    { name: "Jeans", slug: "jeans-category" },
+    { name: "Shoes", slug: "shoes-category" },
   ]
 
   return (
@@ -101,12 +102,7 @@ export default function Header() {
               </Button>
             </Link>
             
-            <Link href="/cart">
-              <Button variant="ghost" size="icon">
-                <ShoppingCart className="h-5 w-5" />
-                <span className="sr-only">Cart</span>
-              </Button>
-            </Link>
+            <CartButton />
             
             {session ? (
               <DropdownMenu>
@@ -143,11 +139,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <Link href="/cart" className="mr-4">
-              <Button variant="ghost" size="icon">
-                <ShoppingCart className="h-5 w-5" />
-              </Button>
-            </Link>
+            <CartButton />
             
             <Sheet>
               <SheetTrigger asChild>
